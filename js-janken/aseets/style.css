@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.choices {
+    padding: 30px 0 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.hands {
+    font-size: 3rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#select,
+#result,
+#cpu-hands {
+    display: block;
+    text-align: center; 
+    margin: 0 auto;
+}
