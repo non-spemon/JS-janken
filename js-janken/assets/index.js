@@ -1,9 +1,9 @@
 // コンピューターの手の配列定義
 // 0=グー, 1=チョキ, 2=パー
 const cpu_hands =[
-    {id:goo, emoji:✊},
-    {id:choki, emoji:✌️},
-    {id:pa, emoji:🖐️}
+    {id:"goo", emoji:"✊"},
+    {id:"choki", emoji:"✌️"},
+    {id:"pa", emoji:"🖐️"}
 ];
 
 // 結果メッセージ
@@ -26,13 +26,18 @@ const resultIndex = (playerHands - cpuHands +3) % 3;
 document.getElementById("result").textContent =RESULT[resultIndex];
 
 // 各ボタンにイベントリスナー一括登録
-HANDS.forEach(hand. index) => {
-    const button = document.getElementsByClassName(hands)
+// 配列の要素を1つずつ取り出して、それぞれに処理をする
+cpu_hands.forEach((hand, index) => {
+    // 1つずつのボタン要素を取得する
+    const button = document.getElementById(hand.id);
 
-    if(button){
-        button.addEventListener("click", () => playJanken(index));
+    // ボタンが存在していれば、クリックイベントを登録する
+    if (button) {
+        button.addEventListener("click", () => {
+            playJanken(index); // クリックされたら何番目の手か(0, 1, 2)を関数に渡す
+        });
     }
-}
+});
 
 
 
