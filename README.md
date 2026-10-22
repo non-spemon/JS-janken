@@ -13,4 +13,4 @@ Jqueryで実装していたアプリケーションを純粋なJSに書き換え
  * 09/10/2026 乱数を使用して簡易判定
 
 ### テスト公開URL
-https://non-spemon.github.io/JS-janken/js-janken/
+https://non-spemon.github.io/JS-janken/
