@@ -19,6 +19,12 @@ body {
     border: 1px solid #ccc;
 }
 
+.cpu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #select,
 #result,
 #cpu-hands {
